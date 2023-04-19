@@ -14,7 +14,7 @@ import { useState } from 'react';
 
 
 const App = () =>{
-  const [isAllowed, setIsAllowed] = useState(true)
+  const [isAllowed, setIsAllowed] = useState(false)
   const [id, setId] = useState('')
   const [name, setName] = useState('')
   const [lastName, setLastName] = useState('')

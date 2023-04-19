@@ -23,19 +23,19 @@ const SolicitudesRecibidas = () => {
   const [showForm, setShowForm] = useState(false)
   const [data, setData] = useState([])
 
-    const handleName = (e)=>{
+    const manejoName = (e)=>{
       setName(e.target.value)
   }
-  const handleLastName = (e)=>{
+  const manejoLastName = (e)=>{
       setLastName(e.target.value)
   }
-  const handlePhone = (e)=>{
+  const manejoPhone = (e)=>{
       setPhone(e.target.value)
   }
-  const handleEmail = (e)=>{
+  const manejoEmail = (e)=>{
       setEmail(e.target.value)
   }
-  const handleMessage = (e)=>{
+  const manejoMessage = (e)=>{
       setMessage(e.target.value)
   }
 
@@ -127,7 +127,7 @@ const SolicitudesRecibidas = () => {
             <TableCell style={{color:'#0afdd7'}} align="left">Last name</TableCell>
             <TableCell style={{color:'#0afdd7'}} align="left">Phone</TableCell>
             <TableCell style={{color:'#0afdd7'}} align="left">E-mail</TableCell>
-            <TableCell style={{color:'#0afdd7'}} align="left">Messag</TableCell>
+            <TableCell style={{color:'#0afdd7'}} align="left">Message</TableCell>
             <TableCell style={{color:'#0afdd7'}} align="left">Edit</TableCell>
             <TableCell style={{color:'#0afdd7'}} align="left">Delete</TableCell>
           </TableRow>
@@ -164,19 +164,19 @@ const SolicitudesRecibidas = () => {
            > 
             <Grid sx={{mt:12, }} container justifyContent="center">               
                 <Grid item xs={4}>
-                  <TextField id="outlined-basic" label="name" value={name} variant="outlined" onChange={handleName}/>
+                  <TextField id="outlined-basic" label="name" value={name} variant="outlined" onChange={manejoName}/>
                 </Grid>
                 <Grid item xs={4}>
-                <TextField id="outlined-basic" label="lastName" value={lastName} variant="outlined" onChange={handleLastName}/>
+                <TextField id="outlined-basic" label="lastName" value={lastName} variant="outlined" onChange={manejoLastName}/>
                 </Grid>
                 <Grid item xs={4}>
-                  <TextField id="outlined-basic" label="phone" value={phone} variant="outlined" onChange={handlePhone}/>
+                  <TextField id="outlined-basic" label="phone" value={phone} variant="outlined" onChange={manejoPhone}/>
                 </Grid>
                 <Grid item sx={{mt:3, }} xs={4}>
-                  <TextField id="outlined-basic" label="email" value={email} variant="outlined" onChange={handleEmail}/>
+                  <TextField id="outlined-basic" label="email" value={email} variant="outlined" onChange={manejoEmail}/>
                 </Grid>
                 <Grid item sx={{mt:3, }} xs={4}>
-                  <TextField id="outlined-basic" label="message" value={message} variant="outlined" onChange={handleMessage}/>
+                  <TextField id="outlined-basic" label="message" value={message} variant="outlined" onChange={manejoMessage}/>
                 </Grid>
               </Grid>
               <Grid container sx={{mt:8, }} justifyContent="center">
