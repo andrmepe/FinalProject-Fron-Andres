@@ -11,12 +11,29 @@ import Botones from '../../components/botones/Botones';
 import BotonPage from '../../components/botonPage/BotonPage';
 import BotonRedesSociales from '../../components/botonRedesSociales/BotonRedesSociales';
 
-const Contactanos = ({name, setName, lastName, setLastName, phone, setPhone,email, setEmail,message, setMessage, 
-    handleEmail, handleLastName, handleMessage, handleName, handlePhone}) => {
+const Contactanos = ({
+    name, 
+    setName, 
+    lastName, 
+    setLastName, 
+    phone, 
+    setPhone,
+    email, 
+    setEmail,
+    message, 
+    setMessage, 
+    handleEmail, 
+    handleLastName, 
+    handleMessage, 
+    handleName, 
+    handlePhone
+    }) => {
+
     const [showAlertSucces, setShowAlertSucces] = useState(false)
     const [showAlertFiels, setShowAlertFiels] = useState(false)
     const [showForm, setShowForm] = useState(true)
-
+    
+    
   /*   const clearFiels =()=>{
         setName('')
         setLastName('')
@@ -38,7 +55,8 @@ const Contactanos = ({name, setName, lastName, setLastName, phone, setPhone,emai
         }, 1000)
     }
     
-    /* console.log(name, lastName, phone, email, message) */
+    console.log(name, lastName, phone, email, message)
+
     const handleSubmit =(e)=>{
         e.preventDefault()
          if(name === '' || lastName === '' || phone === '' || email === '' || message === ''){
@@ -70,11 +88,12 @@ const Contactanos = ({name, setName, lastName, setLastName, phone, setPhone,emai
     console.log(name, lastName, phone, email, message)
     return (
         <Grid  container width='100%' spacing={2} style={{background:'black'}}>
-            <Grid item xs={12}>
+            <Grid item md={12} xs={12}>
             <img  src={Contact} alt='Contact' style={{background:'#ffffff', borderRadius:'30px', width:'200px', 
         heigh:'100px', position:'fixed', marginLeft:'430px', marginTop:'200px', opacity: .4}}/>
-            <Grid ml='70px' mb='20px' mt='20px'><Botones></Botones></Grid>
-            <Typography marginLeft={'175px'} fontSize={'20px'} color={'#ff0080'} variant="h3" gutterBottom>Please fill out the quick form and we will be in touch soon</Typography>       
+            <Grid item md={12} xs={12} ml='70px' mb='20px' mt='20px'><Botones></Botones></Grid>
+            <Grid item md={12} xs={12}><Typography marginLeft={'175px'} fontSize={'20px'} color={'#ff0080'} 
+            variant="h3" gutterBottom>Please fill out the quick form and we will be in touch soon</Typography></Grid>    
             {
                 showAlertSucces && <Alert severity="success">sent succesfully</Alert>
             }
@@ -82,8 +101,10 @@ const Contactanos = ({name, setName, lastName, setLastName, phone, setPhone,emai
                 showAlertFiels && <Alert severity="error">you must complete all the fiels</Alert>
             }
             <Grid  container spacing={2}>
+            
             {   showForm &&
-                <Grid item xs={6}>
+                <Grid item md={6} xs={6}>
+                
             <form onSubmit={handleSubmit}
                 style={{backgroundColor:'white', marginLeft:'175px', width:'200px'}}
                 noValidate
@@ -114,7 +135,7 @@ const Contactanos = ({name, setName, lastName, setLastName, phone, setPhone,emai
                     <BotonRedesSociales></BotonRedesSociales>
                     </Grid>
                 </Grid>           
-               <Grid ml='25px' mt='30px'><BotonPage></BotonPage></Grid>
+               <Grid item md={12} xs={12} ml='25px' mt='30px'><BotonPage></BotonPage></Grid>
                 </Box>
                 </Grid>
                 </Grid>      
