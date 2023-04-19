@@ -13,8 +13,6 @@ import Login from "./pages/login/Login";
 import { useState } from 'react';
 
 
-
-
 const App = () =>{
   const [isAllowed, setIsAllowed] = useState(true)
   const [id, setId] = useState('')
