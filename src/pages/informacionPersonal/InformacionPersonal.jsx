@@ -15,7 +15,7 @@ const InformacionPersonal = () => {
         <Grid  container spacing={2} height='540px' style={{background:'black'}}>
             <Grid item xs={12}>
             <img fontSize={'50px'} src={FondoNegro} alt='FondoNegro' style={{background:'#ffffff', width:'470px', 
-        heigh:'150px', position:'fixed', marginLeft:'50px', marginTop:'40px', marginBottom:'50px',borderRadius:'30px'}}/>
+        heigh:'150px', position:'fixed', marginLeft:'50px', marginTop:'40px', marginBottom:'50px'}}/>
             <img fontSize={'50px'} src={Profile} alt='Profile' style={{background:'#ffffff', width:'350px', 
         heigh:'150px', position:'fixed', marginLeft:'880px', marginTop:'110px' ,borderRadius:'30px'}}/>
           <Grid ml='100px' mt='10px'><Botones></Botones></Grid>
