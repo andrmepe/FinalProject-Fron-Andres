@@ -12,12 +12,12 @@ import BotonRedesSociales from '../../components/botonRedesSociales/BotonRedesSo
 
 const InformacionPersonal = () => {
     return (
-        <Grid  container spacing={2} height='540px' style={{background:'black'}}>
+        <Grid  container spacing={2} height='560px' style={{background:'black'}}>
             <Grid item xs={12}>
             <img fontSize={'50px'} src={FondoNegro} alt='FondoNegro' style={{background:'#ffffff', width:'470px', 
-        heigh:'150px', position:'fixed', marginLeft:'50px', marginTop:'40px', marginBottom:'50px'}}/>
+        heigh:'150px', position:'fixed', marginLeft:'50px', marginTop:'60px', marginBottom:'50px'}}/>
             <img fontSize={'50px'} src={Profile} alt='Profile' style={{background:'#ffffff', width:'350px', 
-        heigh:'150px', position:'fixed', marginLeft:'880px', marginTop:'110px' ,borderRadius:'30px'}}/>
+        heigh:'150px', position:'fixed', marginLeft:'880px', marginTop:'130px'}}/>
           <Grid ml='100px' mt='10px'><Botones></Botones></Grid>
             <Typography ml={'535px'} mt={'20px'} fontSize={'25px'} color={'#0afdd7'} variant="h3" gutterBottom>Hi</Typography>
             <Typography ml={'535px'} mt={'20px'} fontSize={'25px'} color={'#ff0080'} variant="h3" gutterBottom>I am a Developer</Typography>

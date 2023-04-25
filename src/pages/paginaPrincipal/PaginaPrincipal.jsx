@@ -26,7 +26,7 @@ const PaginaPrincipal = () => {
            </Grid>
         <Grid mt={6} container marginBottom='20px'>
                     <Grid item xs={12}/>
-                            <Typography variant="h5" marginLeft={5} gutterBottom style={{ background: 'black', color:'white' }}>
+                            <Typography variant="h5" marginLeft='55px' gutterBottom style={{ background: 'black', color:'white' }}>
                                 For more information do not hesitate to contact me
                             </Typography>
                            <BotonContactame></BotonContactame>
