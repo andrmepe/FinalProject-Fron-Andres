@@ -5,7 +5,7 @@ import Grid  from '@mui/material/Grid'
 const Botones = ()=>{
     return(
         <Grid container xs={12}>
-            <Grid item={true} md={2.6} xs={8} mt='20px'><Link to="/InformacionPersonal"style={{marginLeft:'15px', fontSize:'20px', fontFamily:'arial',
+            <Grid item={true} md={2.6} xs={8} mt='20px' ><Link to="/InformacionPersonal"style={{marginLeft:'15px', fontSize:'20px', fontFamily:'arial',
                 textDecoration:'none', padding:'5px',borderRadius:'5px',border: '1px solid #0afdd7',color: "white"}}>
                 Personal information
                 </Link></Grid>
