@@ -8,14 +8,15 @@ import Botones from '../../components/botones/Botones';
 import BotonContactame from '../../components/botonContactame/BotonContactame.jsx';
 import BotonPage from '../../components/botonPage/BotonPage';
 import BotonRedesSociales from '../../components/botonRedesSociales/BotonRedesSociales';
+/* import './InformacionPersonal.css' */
 
 
 const InformacionPersonal = () => {
     return (
         <Grid  container spacing={2} height='100%' style={{maxWidth:'1350px',minWidth:'350px', position:'fixed', background:'black'}}>
             <Grid>
-            {/* <img className='image1' fontSize={'50px'} src={FondoNegro} alt='FondoNegro' style={{background:'#ffffff', width:'470px', 
-        heigh:'150px', position:'back', marginLeft:'50px' ,marginTop:'60px', marginBottom:'50px'}}></img> */}
+        {/* {<img className='image1' fontSize={'50px'} src={FondoNegro} alt='FondoNegro' style={{background:'#ffffff', width:'470px', 
+        heigh:'50px', position:'back', marginLeft:'50px' ,marginTop:'60px', marginBottom:'50px'}}></img>} */}
             <img fontSize={'50px'} src={Profile} alt='Profile' style={{background:'#ffffff', width:'350px', 
         heigh:'150px', position:'fixed', marginLeft:'400px', marginTop:'130px'}}></img>
           <Grid ml='30px' mt='10px'><Botones></Botones></Grid>
