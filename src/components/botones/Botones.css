@@ -1,0 +1,63 @@
+.menu-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Centrar elementos verticalmente */
+    margin-top: 20px;
+  }
+  
+  .menu-icon {
+    color: white;
+    font-size: 24px;
+    margin-left: auto;
+  }
+  
+  .menu-icon:hover {
+    background-color: transparent;
+    color: white;
+  }
+  
+  .drawer {
+    background-color: black; /* Color de fondo del Drawer */
+  }
+  
+  .drawer-content {
+    padding: 20px;
+  }
+
+  .menu-links {
+    display: none;
+  }
+  
+  /* Media query para mostrar los enlaces en pantalla grande y ocultar el icono */
+  @media (min-width: 768px) {
+    .menu-icon {
+      display: none;
+      color: white
+    }
+  
+    .menu-links {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .menu-links .MuiMenuItem-root {
+      margin-right: 20px;
+    }
+  }
+  
+  .menu-link1 {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px; 
+
+  }
+  .menu-link {
+    text-decoration: none;
+    color: white;
+    border: 1px solid #0afdd7;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px; 
+
+  }

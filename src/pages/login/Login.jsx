@@ -45,6 +45,7 @@ const Login = ({setIsAllowed})=>{
         setShowAlert(true)
         timeOutAlert()
        } else {
+        console.log('usuario logeado')
         axios.post('http://localhost:3001/login',{
             user: user,
             password: password
@@ -65,7 +66,7 @@ const Login = ({setIsAllowed})=>{
             
             {
                 showAlert && 
-                <Alert severity="error">you must complete all the fiels</Alert>
+                <Alert severity="Error">qplease fill out all the fields</Alert>
             }
             {
                 ShowAlertUser &&

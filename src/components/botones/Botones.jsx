@@ -1,32 +1,103 @@
-import { Link } from "react-router-dom";
-import React from "react";
-import Grid  from '@mui/material/Grid'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { Drawer, IconButton, MenuItem } from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
+import './Botones.css'; // Archivo CSS para estilos
 
-const Botones = ()=>{
-    return(
-        <Grid container>
-            <Link to="/InformacionPersonal"style={{marginLeft:'40px', marginTop:'20px', fontSize:'20px', fontFamily:'arial',
-                textDecoration:'none', padding:'5px',borderRadius:'5px',border: '1px solid #0afdd7',color: "white"}}>
-                Personal information
-                </Link>
-                <Link to="/ProyectosCreados"style={{marginLeft:'40px',fontSize:'20px',  marginTop:'20px',fontFamily:'arial',
-                textDecoration:'none', padding:'5px',borderRadius:'5px',border: '1px solid #0afdd7',color: "white"}}>
-                Projects created
-                </Link>
-                <Link to="/RedesSociales"style={{marginLeft:'40px', fontSize:'20px', marginTop:'20px', fontFamily:'arial',
-                textDecoration:'none', padding:'5px',borderRadius:'5px',border: '1px solid #0afdd7',color: "white"}}>
-                Social networks
-                </Link>
-                <Link to="/TecnologiasAprendidas"style={{marginLeft:'40px', fontSize:'20px', marginTop:'20px', fontFamily:'arial',
-                textDecoration:'none', padding:'5px',borderRadius:'5px',border: '1px solid #0afdd7',color: "white"}}>
-                Technologies learned
-                </Link>
-                <Link to="/SolicitudesRecibidas"style={{marginLeft:'40px', fontSize:'20px', marginTop:'20px', fontFamily:'arial',
-                textDecoration:'none', padding:'5px',borderRadius:'5px',border: '1px solid #0afdd7',color: "white"}}>
-                Applications received
-                </Link>
-        </Grid>
-    )
-}
+const Botones = () => {
+  const [drawerOpen, setDrawerOpen] = useState(false);
 
-export default Botones
+  const handleDrawerToggle = (open) => (event) => {
+    if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+      return;
+    }
+    setDrawerOpen(open);
+  };
+
+  return (
+    <div style={{display:'flex'}}>
+      {/* Mostrar icono en dispositivos móviles */}
+      <IconButton
+        edge="start"
+        color="inherit"
+        aria-label="menu"
+        onClick={handleDrawerToggle(true)}
+        className="menu-icon"
+      >
+        <MenuIcon style={{color:'white', marginLeft:'40px', marginTop:'10px', fontSize:'40px'}}/>
+      </IconButton>
+
+      {/* Drawer para dispositivos móviles */}
+      <Drawer
+        anchor="left"
+        open={drawerOpen}
+        onClose={handleDrawerToggle(false)}
+        
+      >
+        <div
+          role="presentation"
+          onClick={handleDrawerToggle(false)}
+          onKeyDown={handleDrawerToggle(false)}
+        >
+          <MenuItem>
+            <Link to="/InformacionPersonal" className="menu-link1">
+              Personal information
+            </Link>
+          </MenuItem>
+          <MenuItem>
+            <Link to="/ProyectosCreados" className="menu-link1">
+              Projects created
+            </Link>
+          </MenuItem>
+          <MenuItem>
+            <Link to="/RedesSociales" className="menu-link1">
+              Social networks
+            </Link>
+          </MenuItem>
+          <MenuItem>
+            <Link to="/TecnologiasAprendidas" className="menu-link1">
+              Technologies learned
+            </Link>
+          </MenuItem>
+          <MenuItem>
+            <Link to="/SolicitudesRecibidas" className="menu-link1">
+              Applications received
+            </Link>
+          </MenuItem>
+        </div>
+      </Drawer>
+
+      {/* Mostrar enlaces en pantalla grande */}
+      <div className="menu-links">
+        <MenuItem>
+          <Link to="/InformacionPersonal" className="menu-link">
+            Personal information
+          </Link>
+        </MenuItem>
+        <MenuItem>
+          <Link to="/ProyectosCreados" className="menu-link">
+            Projects created
+          </Link>
+        </MenuItem>
+        <MenuItem>
+          <Link to="/RedesSociales" className="menu-link">
+            Social networks
+          </Link>
+        </MenuItem>
+        <MenuItem>
+          <Link to="/TecnologiasAprendidas" className="menu-link">
+            Technologies learned
+          </Link>
+        </MenuItem>
+        <MenuItem>
+          <Link to="/SolicitudesRecibidas" className="menu-link">
+            Applications received
+          </Link>
+        </MenuItem>
+        
+      </div>
+    </div>
+  );
+};
+
+export default Botones;

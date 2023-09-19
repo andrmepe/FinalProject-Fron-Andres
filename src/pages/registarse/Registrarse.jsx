@@ -13,6 +13,7 @@ const Registarse = ({setShowLogin, setShowRegistrarse, user, password, handleuse
         if(user === "" || password ===''){
             alert('must complete all the fiels')
         } else {
+            console.log('entro else')
             axios.post('http://localhost:3001/login/newUser',{
                 user: user,
                 password: password
