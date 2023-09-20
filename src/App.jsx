@@ -6,11 +6,13 @@ import PaginaPrincipal from "./pages/paginaPrincipal/PaginaPrincipal";
 import RedesSociales from "./pages/redesSociales/RedesSociales";
 import ProyectosCreados from "./pages/proyectosCreados/ProyectosCreados";
 import TecnologiasAprendidas from "./pages/tecnologiasAprendidas/TecnologiasAprendidas";
-import SolicitudesRecibidas from "./pages/solicitudesRecibidas/SolicitudesRecibidas"
+import SolicitudesRecibidas from "./pages/solicitudesRecibidas/SolicitudesRecibidas";
+import Digimed from './pages/proyectosCreados/Digimed';
 import { ProtectedRoute } from './pages/protectedRoute/Protectedroute';
 import React from 'react';
 import Login from "./pages/login/Login";
 import { useState } from 'react';
+import Food from './pages/proyectosCreados/Food';
 
 
 const App = () =>{
@@ -70,6 +72,8 @@ const handleMessage = (e)=>{
         <Route path="/paginaPrincipal" element = {<PaginaPrincipal/>}></Route>
         <Route path="/redesSociales" element = {<RedesSociales/>}></Route>
         <Route path="/proyectosCreados" element = {<ProyectosCreados/>}></Route>
+        <Route path="/digimedproject" element = {<Digimed/>}></Route>
+        <Route path="/foodproject" element = {<Food/>}></Route>
         <Route path="/tecnologiasAprendidas" element = {<TecnologiasAprendidas/>}></Route>
         <Route path="/solicitudesRecibidas" element = {<SolicitudesRecibidas />}></Route>
       </Routes>

@@ -1,40 +1,67 @@
-import { NavLink } from "react-router-dom";
-import { Grid } from "@mui/material";
 import React from "react";
-/* import imgRouter from '../../pages/assets/imgRouter.png' */
+import digimed3 from '../../pages/assets/digimed3.png';
+import food1 from '../../pages/assets/food1.png';
+import Markeplace from '../../pages/assets/Markeplace.png';
+import PortafolioPrueba from '../../pages/assets/PortafolioPrueba.png';
+import { Link } from "react-router-dom";
+
 
 const LinkProyectos = ()=>{
     return(
-<Grid container spacing={2} ml='150px' >
-                <Grid xs={6}>
-                {/* <img fontSize={'50px'} src={imgRouter} alt='imgRouter' style={{ width:'70px', background:'#ffffff',
-        heigh:'30px', position:'back', marginLeft:'55px',borderRadius:'20px',marginTop:'60px', marginBottom:'50px'}}></img> */}
-                <Grid><NavLink to='https://github.com/andrmepe/portafolioFinalAndres' style={{fontSize:'15px'}} target='_blank' 
-                rel=' noopener noreferrer'>https://github.com/andrmepe/portafolioFinalAndres </NavLink></Grid>
-                <Grid><NavLink to='https://github.com/andrmepe/portafolioFinalBack' style={{fontSize:'15px'}} target='_blank' 
-                rel=' noopener noreferrer'>https://github.com/andrmepe/portafolioFinalBack </NavLink></Grid>
-                <Grid><NavLink to='https://github.com/andrmepe/markeplaceFrontEnd' style={{fontSize:'15px'}} target='_blank' 
-                rel=' noopener noreferrer'>https://github.com/andrmepe/markeplaceFrontEnd </NavLink></Grid>
-                <Grid><NavLink to='https://github.com/andrmepe/markeplaceBackend' style={{fontSize:'15px'}} target='_blank' 
-                rel=' noopener noreferrer'>https://github.com/andrmepe/markeplaceBackend </NavLink></Grid>
-                <Grid><NavLink to='https://github.com/andrmepe/peliculas-back' style={{fontSize:'15px'}} target='_blank' 
-                rel=' noopener noreferrer'>https://github.com/andrmepe/peliculas-back </NavLink></Grid>
-                <Grid><NavLink to='https://github.com/andrmepe/challenge-react-router-front' style={{fontSize:'15px'}} target='_blank' 
-                rel=' noopener noreferrer'>https://github.com/andrmepe/challenge-react-router-front </NavLink></Grid>
-                </Grid>
-                <Grid xs={6}>
-                <Grid><NavLink to='https://github.com/andrmepe/fron-vehiculos' style={{fontSize:'15px'}} target='_blank' 
-                rel=' noopener noreferrer'>https://github.com/andrmepe/fron-vehiculos</NavLink></Grid>
-                <Grid><NavLink to='https://github.com/andrmepe/backendVehiculos' style={{fontSize:'15px'}} target='_blank' 
-                rel=' noopener noreferrer'>https://github.com/andrmepe/backendVehiculos</NavLink></Grid>
-                <Grid><NavLink to='https://github.com/andrmepe/Primer-commit-FronUser' style={{fontSize:'15px'}} target='_blank' 
-                rel=' noopener noreferrer'>https://github.com/andrmepe/Primer-commit-FronUser</NavLink></Grid>
-                <Grid><NavLink to='https://github.com/andrmepe/portafolio2' style={{fontSize:'15px'}} target='_blank' 
-                rel=' noopener noreferrer'>https://github.com/andrmepe/portafolio2</NavLink></Grid>
-                <Grid><NavLink to='https://github.com/andrmepe/portafolio' style={{fontSize:'15px'}} target='_blank' 
-                rel=' noopener noreferrer'>https://github.com/andrmepe/portafolio</NavLink></Grid>
-                </Grid>
-                </Grid>
+<div>
+<div style={{display:'flex', flexDirection:'column',alignItems: "center", textAlign: "center", marginBottom:'30px'}}>
+    <div style={{ width: '600px', height: '500px'}}>
+    <img
+    src={digimed3}
+    alt='digimed3'
+    style={{ width: '100%', height: '100%' }}
+    />
+    </div>
+    
+        <p style={{ color: 'white', maxWidth: '600px' }}>project created with the goal of creating a platform that offers a transformative way of managing 
+            medical prescriptions. This project aimed to increase the efficiency and precision in the generation 
+            of prescriptions issued by medical professionals. With this platform, the patient will be able to 
+            have their medical prescription in PDF for quick printing. <Link style={{color:'#0afdd7'}} to="/digimedproject"> see more... </Link> </p>
+            
+</div>
+<div style={{display:'flex', flexDirection:'column',alignItems: "center", textAlign: "center", marginBottom:'30px'}}>
+    <div style={{ width: '600px', height: '400px'}}>
+    <img
+    src={food1}
+    alt='digimed3'
+    style={{ width: '100%', height: '100%' }}
+    />
+    </div>
+        <p style={{ color: 'white', maxWidth: '600px' }}>
+            Project created to give customers the opportunity to try Colombian food and be able to order 
+            online or view the available menu. <Link style={{color:'#0afdd7'}} to="/foodproject"> see more... </Link></p>
+    </div>
+    <div style={{display:'flex', flexDirection:'column',alignItems: "center", textAlign: "center", marginBottom:'30px'}}>
+    <div style={{ width: '600px', height: '400px'}}>
+    <img
+    src={Markeplace}
+    alt='digimed3'
+    style={{ width: '100%', height: '100%' }}
+    />
+    </div>
+        <p style={{ color: 'white', maxWidth: '600px' }}>
+        Creation of a marketeplace where the user can make a filter according to what they 
+        want to search for to buy online.</p>
+    </div>
+    <div style={{display:'flex', flexDirection:'column',alignItems: "center", textAlign: "center", marginBottom:'30px'}}>
+    <div style={{ width: '600px', height: '400px'}}>
+    <img
+    src={PortafolioPrueba}
+    alt='digimed3'
+    style={{ width: '100%', height: '100%' }}
+    />
+    </div>
+        <p style={{ color: 'white', maxWidth: '600px' }}>
+        First portfolio created, I called it a test portfolio because I was rehearsing 
+        the creation of my portfolio.</p>
+    </div>
+
+</div>
     )
 }
 

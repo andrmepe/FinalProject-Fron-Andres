@@ -2,10 +2,6 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import KeyboardIcon from '@mui/icons-material/Keyboard';
 import React from 'react';
-import Web1 from '../assets/Web1.png';
-import Web2 from '../assets/Web2.png';
-import Web3 from '../assets/Web3.png';
-import { NavLink } from 'react-router-dom';
 import Botones from '../../components/botones/Botones';
 import BotonContactame from '../../components/botonContactame/BotonContactame.jsx';
 import BotonPage from '../../components/botonPage/BotonPage';
@@ -32,12 +28,6 @@ const ProyectosCreados = () => {
              </Grid>
              </Grid>   
             </Grid>
-             <img  src={Web1} alt='Web1' style={{background:'#ffffff', borderRadius:'30px', width:'200px', 
-        heigh:'100px', position:'back', marginLeft:'120px', marginTop:'20px', opacity: .4}}></img>
-        <img  src={Web2} alt='Web2' style={{background:'#ffffff', borderRadius:'30px', width:'200px', 
-        heigh:'100px', position:'back', marginLeft:'120px', marginTop:'20px', opacity: .4}}></img>
-        <img  src={Web3} alt='Web3' style={{background:'#ffffff', borderRadius:'30px', width:'200px', 
-        heigh:'100px', position:'back', marginLeft:'120px', marginTop:'20px', opacity: .4}}></img>
             </Grid>
       </Grid>
     )
